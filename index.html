@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>365 Reasons Why I Love You</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #ffe6e6;
+      color: #333;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      color: #e60073;
+    }
+    #reason {
+      margin: 2rem 0;
+      font-size: 1.5rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #ff3399;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e60073;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>365 Reasons Why I Love You 💖</h1>
+  <div id="reason">Click the button to see the first reason!</div>
+  <button onclick="showNextReason()">Next Reason</button>
+
+  <script>
+    const reasons = [
+      "You always know how to make me smile.",
+      "You support me even when I'm unsure of myself.",
+      "You laugh at my dumb jokes.",
+      "You have the kindest heart I've ever known.",
+      // Add up to 365 here!
+    ];
+
+    let index = 0;
+
+    function showNextReason() {
+      if (index < reasons.length) {
+        document.getElementById('reason').textContent = reasons[index];
+        index++;
+      } else {
+        document.getElementById('reason').textContent = "That's all 365 reasons... for now 😉";
+      }
+    }
+  </script>
+
+</body>
+</html>
