@@ -22,6 +22,7 @@
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease-in-out;
     }
     button {
       background: #ff3399;
@@ -31,6 +32,7 @@
       font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
     button:hover {
       background: #e60073;
@@ -39,27 +41,24 @@
 </head>
 <body>
 
-  <h1>12 Reasons Why I Love You 💖(BECAUSE OF THE 12 MONTHS WE BEEN TOGETHER)</h1>
+  <h1>12 Reasons Why I Love You 💖<br>(One for Each Month Together)</h1>
   <div id="reason">Click the button to see the first reason!</div>
   <button onclick="showNextReason()">Next Reason</button>
 
   <script>
     const reasons = [
-      "putting up with my dumb ahh for 365 days",
-      "No one is like you",
-      "The most beautifulll girl in tha world",
-      "Your smile lights up my worlddd",
-      "You so sexy my pp go up",
+      "You’ve put up with my goofy self for 365 days 😅",
+      "No one else compares to you.",
+      "You're the most beautiful girl in the world.",
+      "Your smile lights up my entire day.",
+      "You're so fine it should be illegal 😳",
       "You have the kindest heart I've ever known.",
-      "i get lost in those gorgious eyes",
-      "you have nice looking feet",
-      "booty so fat",
-      "ur cute, samrt like litereally eveyrthing ur so beutifull",
-      "you always comfort me when i need it",
-      "i always end up smiling when im with you",
-      "Even though were miles  apart, my hear feels closer to you than ever. Today marks another beautiful chapter i our journey together, and im so grateful for every moment we shared, through calls, messages and even the tough days weve powered together.",
-      "AND AT LAST, HAPPY ANNIVERSARY BABYYYYY, CHEERS TO MANY MOREEE, I CANT THANK YOU ENOUGH FOR EVERTYGHINH",
-      // Add up to 365 here!
+      "I get completely lost in those gorgeous eyes.",
+      "You even have cute feet (yes, I said it 🦶😂).",
+      "That booty? Perfect. No notes. 🍑",
+      "You're cute, smart, and honestly, everything I could ever want.",
+      "You're always there to comfort me when I need it most.",
+      "Even when we're miles apart, my heart feels closer to you than ever. Happy anniversary baby — here's to many more. I’m so grateful for every call, every message, every moment together 💕"
     ];
 
     let index = 0;
@@ -69,7 +68,7 @@
         document.getElementById('reason').textContent = reasons[index];
         index++;
       } else {
-        document.getElementById('reason').textContent = "That's all 12 reasons... for now 😉";
+        document.getElementById('reason').textContent = "That's all 12 reasons… for now 😉";
       }
     }
   </script>
